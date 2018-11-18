@@ -7,12 +7,9 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-group :development do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+gem 'sqlite3', groups: %w(test development), require: false
+
+gem 'pg', groups: %w(production), require: false
 
 gem 'carrierwave'
 # Use Puma as the app server
