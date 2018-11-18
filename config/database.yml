@@ -23,6 +23,7 @@ test:
 production:
   <<: *default
   # database: db/production.sqlite3
+  adapter: postgresql
   database: dbc8n234d0icch
   username: aocastoscgfkhz
   password: 760f26a8ee18f8cf5606b6ff7618a2d64877d1e98690a0a60f6c96801ec46574
